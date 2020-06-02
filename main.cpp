@@ -32,7 +32,7 @@ runtime_info preprocess_arguments(cli_args const &arg) {
   rt_info.subs_flag = arg.subs_flag;
   rt_info.no_repeat_flag = arg.no_repeat_flag;
 
-  if (arg.verbose_flag) {
+  if (arg.is_verbose) {
     spdlog::set_level(spdlog::level::debug); // Set global log level to debug
   }
   if (!arg.range_string.empty()) {
@@ -120,7 +120,7 @@ int main(int argc, char **argv) {
   app.add_option("-p,--prepend-list", argument.prepend_list_filename,
                  "Specify a file of words to prepend  to a host.");
   app.add_flag(
-      "-v,--verbose_flag", argument.verbose_flag,
+      "-v,--verbose_flag", argument.is_verbose,
       "If set then verbose_flag output will be displayed in the terminal.");
   app.add_flag("-i,--include-original", argument.include_flag,
                "If set, original domains (from source files) are included in "

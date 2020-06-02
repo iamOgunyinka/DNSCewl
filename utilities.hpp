@@ -18,7 +18,7 @@ struct cli_args {
   std::string set_list_filename{};
   std::string append_list_filename{};
   std::string prepend_list_filename{};
-  bool verbose_flag{false};
+  bool is_verbose{false};
   bool subs_flag{false};
   bool include_flag{false};
   bool no_color{false};
