@@ -2,7 +2,7 @@ DNSCewl( a refactored fork by [![Twitter](https://img.shields.io/badge/Twitter-i
 
 Original work by [![Twitter](https://img.shields.io/badge/twitter-@codingo__-blue.svg)](https://twitter.com/codingo_)
 
-A DNS Bruteforcing Wordlist Generator.
+# A DNS Bruteforcing Wordlist Generator.
 
 | Argument   | Description                                                           |
 |------------|-----------------------------------------------------------------------|
